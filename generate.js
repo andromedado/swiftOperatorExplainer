@@ -7,6 +7,10 @@ var _ = require('underscore');
 
 var columns = 10;
 
+//UGH!
+//Ugly format Apple ;)
+// https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/LexicalStructure.html#//apple_ref/swift/grammar/operator-head
+
 var legalOperatorHeads = [
 	['A1', 'A7'],
 	'A9', 'AB', 'AC', 'AE',
@@ -36,7 +40,7 @@ var legalOperatorCharacters = [
 
 function hexStringToNum (hexString) {
 	hexString = hexString || '0';
-	while (hexString.length < 4) {
+	while (hexString.length < 4) {//probably not necessary?
 		hexString = '0' + hexString;
 	}
 	return Number('0x' + hexString);
