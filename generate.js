@@ -90,7 +90,7 @@ var operatorHeadCharacters = tabSeparateElements(allLegalOperatorHeadCharacters(
 var operatorCharacters = tabSeparateElements(justLegalOperatorCharacters(), columns);
 
 var templateFile = __dirname + '/template.html';
-var htmlDestination = __dirname + '/swiftOperatorCharacters.html';
+var htmlDestination = __dirname + '/index.html';
 
 fs.readFile(templateFile, function (error, data) {
 	var template = data + '';
